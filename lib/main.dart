@@ -1,20 +1,22 @@
 import 'package:flutter/material.dart';
-import 'package:store_app/screens/homePage.dart';
+import 'package:store/screens/home_page.dart';
+import 'package:store/screens/update_product_page.dart';
 
 void main() {
   runApp(const StoreApp());
 }
 
 class StoreApp extends StatelessWidget {
-  const StoreApp({super.key});
+  const StoreApp({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       routes: {
-        Homepage.id: (context) => const Homepage(),
+        HomePage.id: (context) => HomePage(),
+        UpdateProductPage.id: (context) => UpdateProductPage(),
       },
-      initialRoute: Homepage.id,
+      initialRoute: HomePage.id,
     );
   }
 }

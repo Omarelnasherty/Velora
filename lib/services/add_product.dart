@@ -1,19 +1,22 @@
-import 'package:store_app/helper/api.dart';
-import 'package:store_app/models/get_all_product_model.dart';
+import 'package:store/helper/api.dart';
+import 'package:store/models/product_model.dart';
 
 class AddProduct {
-  Future<productModel> addProduct(
+  Future<ProductModel> addProduct(
       {required String title,
-      required String desc,
       required String price,
-      required String image}) async {
-    Map<String, dynamic> data =
-        await Api().post(url: 'https://fakestoreapi.com/products', body: {
+      required String desc,
+      required String image,
+      required String category}) async {
+    Map<String, dynamic> data = await 
+        Api().post(url: 'https://fakestoreapi.com/products', body: {
       'title': title,
-      'description': desc,
       'price': price,
+      'description': desc,
       'image': image,
+      'category': category,
     });
-    return productModel.fromJson(data);
+
+    return ProductModel.fromJson(data);
   }
 }
