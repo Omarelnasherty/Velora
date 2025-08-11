@@ -1,95 +1,100 @@
 
+## 📸 Poster
+
+<p align="center">
+  <img src="Velora.png" alt="Velora Poster" width="80%">
+</p>
+
+---
+
 # 🛍️ Velora
 
-This is a simplified e-commerce Flutter app created to practice and apply core Flutter concepts, such as:
+🚀 **Just the Beginning** — Velora is a simple e-commerce Flutter app created as part of my learning journey.  
+This is **version 1.0**, focusing on the **core fundamentals** of Flutter while keeping things clean and minimal.
 
-- Building UI with widgets
-- State management using `setState`
-- Working with external APIs
-- Using `FutureBuilder` to handle asynchronous data
+
+---
+
+## 📚 What’s Inside
+
+Velora was built to practice and apply essential Flutter concepts:
+
+- Building UI with **widgets**
+- State management using **setState**
+- Working with **external APIs**
+- Using **FutureBuilder** for async data
 - Navigating between screens
-- Organizing code with models, services, and custom widgets
-
-> The app fetches product data from an API and allows updating product details through a dedicated form screen.
+- Organizing code with **models, services, and custom widgets**
 
 ---
 
 ## 📱 Screens & Features
 
-- **Home Page**  
-  Displays a grid of products retrieved from [FakeStoreAPI](https://fakestoreapi.com/).
+### **Home Page**
+- Displays a grid of products retrieved from **FakeStoreAPI**.
 
-- **Update Product Page**  
-  Allows editing of product title, price, description, and image URL.  
-  Changes are sent via a PUT request to the API.
+### **Update Product Page**
+- Edit product title, price, description, and image URL.
+- Updates sent via a **PUT request** to the API.
 
-- **Custom Widgets**  
-  Modular design using reusable components like `CustomCard`, `CustomTextField`, and `CustomButton`.
+### **Custom Widgets**
+- Modular design with components like:
+  - `CustomCard`
+  - `CustomTextField`
+  - `CustomButton`
 
 ---
 
 ## 🧱 Tech Stack
 
-- **Flutter** (UI Framework)
-- **Dart** (Language)
-- `http` (Networking)
-- `modal_progress_hud_nsn` (Loading Indicator)
-- `font_awesome_flutter` (Icons)
+- **Flutter** (UI Framework)  
+- **Dart** (Language)  
+- `http` (Networking)  
+- `modal_progress_hud_nsn` (Loading Indicator)  
+- `font_awesome_flutter` (Icons)  
 
 ---
 
 ## 🗂 Project Structure
 
-```
-
+ ``` 
 lib/
-├── main.dart                      // Entry point
-├── models/                        // Product & Rating models
-│   └── product\_model.dart
-├── services/                      // API service classes
-│   ├── get\_all\_product\_service.dart
-│   └── update\_product.dart
-├── screens/                       // Screens
-│   ├── home\_page.dart
-│   └── update\_product\_page.dart
-├── widgets/                       // Reusable UI components
-│   ├── custom\_card.dart
-│   ├── custom\_button.dart
-│   └── custom\_text\_field.dart
-
-````
+├── main.dart // Entry point
+├── models/ // Product & Rating models
+│ └── product_model.dart
+├── services/ // API services
+│ ├── get_all_product_service.dart
+│ └── update_product.dart
+├── screens/ // Screens
+│ ├── home_page.dart
+│ └── update_product_page.dart
+├── widgets/ // Reusable components
+│ ├── custom_card.dart
+│ ├── custom_button.dart
+│ └── custom_text_field.dart
+ ``` 
 
 ---
 
 ## 🚀 Getting Started
 
-1. Clone the repository:
-   ````
-   git clone https://github.com/Omarelnasherty/Velora.git
-   cd Velora
-   
-2. Install dependencies:
+```bash
+git clone https://github.com/Omarelnasherty/Velora.git
+cd Velora
+flutter pub get
+flutter run
+ ``` 
+🎯 Future Plans
+This release focuses on fundamentals — the next versions will bring:
 
-   ````
-   flutter pub get
-  
-3. Run the app:
+🛒 Full store with cart & checkout
 
-   ````
-   flutter run
+💳 Payment integration (Stripe, PayPal)
 
----
+🛠 Admin dashboard for managing products
 
-## 🎯 Future Plans
+🎨 Animations & polished UI/UX
 
-This version focuses on fundamentals. The next release will include:
+🧩 Clean Architecture & advanced State Management
 
-* ✅ Full-featured store with cart & checkout
-* ✅ Payment integration (e.g. Stripe, PayPal)
-* ✅ Admin dashboard for managing products
-* ✅ Animations and polished UI/UX
-* ✅ Clean Architecture & State Management (e.g. Provider, Bloc)
-
-  > This project is part of my learning journey — thanks for checking it out! 🚀
-
----
+💡 Thanks for checking out Velora — the journey has just begun! 🚀
